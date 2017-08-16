@@ -5,6 +5,13 @@ status](https://travis-ci.org/inconshreveable/ngrok.svg)](https://travis-ci.org/
 ### ”I want to expose a local server behind a NAT or firewall to the internet.”
 ![](https://ngrok.com/static/img/overview.png)
 
+##Instalar Go en linux
+`tar -C /usr/local -xzf go1.4.2.linux-amd64.tar.gz`.
+#####For Go to work properly, you need to set the following two environment variables:
+- Setup a go folder `mkdir -p ~/go; echo "export GOPATH=$HOME/go" >> ~/.bashrc`
+- Update your path `echo "export PATH=$PATH:$HOME/go/bin:/usr/local/go/bin" >> ~/.bashrc`
+- Read the environment variables into current session: `source ~/.bashrc`
+
 ## What is ngrok?
 ngrok is a reverse proxy that creates a secure tunnel from a public endpoint to a locally running web service.
 ngrok captures and analyzes all traffic over the tunnel for later inspection and replay.
